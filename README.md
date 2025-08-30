@@ -1,4 +1,4 @@
-# AO3 Dark Minimalist Skin
+# AO3 Midnight Soft Dark Minimalist Skin
 
 A sleek, dark, and readable custom CSS skin for **Archive of Our Own (AO3)**.  
 Designed to be easy on the eyes and aesthetically pleasing.  
