@@ -1,0 +1,1023 @@
+a,
+a:visited {
+  color: #eeeeee !important;
+}
+
+a:focus,
+img:focus,
+span:focus,
+*:focus {
+  outline: 0;
+  border: 0;
+}
+
+span {
+  color: #eeeeee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  line-height: 1.3em;
+}
+
+html,
+body,
+#inner,
+#outer,
+.wrapper {
+  background: #060606;
+  color: #f2f2f2;
+  box-shadow: none;
+}
+
+.flash {
+  color: #eeeeee !important;
+  box-shadow: none;
+}
+
+.notice,
+.comment_notice {
+  background: #37474F;
+  border: 1px solid #263238;
+  box-shadow: none;
+}
+
+.reading h4.viewed,
+.reading h4.viewed span {
+  background: #111111;
+  border-radius: 8px;
+  color: #bababa !important;
+  padding: 0em;
+}
+
+#header,
+#header .primary {
+  background: #131313;
+  box-shadow: none;
+  color: #eeeeee !important;
+}
+
+#header {
+  padding-top: 1em;
+}
+
+#header .heading {
+  margin-left: 2em;
+}
+
+#header .heading a {
+  color: #eeeeee;
+}
+
+#header .primary {
+  margin-top: 1em;
+}
+
+#greeting .user > li a {
+  color: #eeeeee;
+}
+
+#greeting img {
+  display: none;
+}
+
+#header .primary a.dropdown-toggle {
+  padding: 0.7em 0.5em;
+  border-bottom: 0px solid;
+}
+
+#header .primary .dropdown:hover a.dropdown-toggle {
+  background: #131313;
+  color: #eeeeee;
+  border-bottom: 0px solid;
+}
+
+#header .menu {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+#header .menu li {
+  background: #111111;
+  border-radius: 8px;
+  margin: 0;
+  border: 0;
+  padding: 0.1em 0.5em;
+}
+
+#header a,
+#header a:visited,
+#header .primary .dropdown:hover a {
+  color: #eeeeee;
+  text-decoration: none !important;
+}
+
+#header a:hover,
+#header a:visited:hover,
+#header .primary .dropdown:hover a:hover {
+  background: transparent;
+  color: #eeeeee;
+  text-decoration: none !important;
+}
+
+#login,
+#greeting {
+  margin-right: 3.5em;
+  margin-top: 0.5em;
+  text-transform: none;
+  font-weight: 500;
+}
+
+#greeting .user>li {
+  margin: 0;
+}
+
+#header .dropdown:hover a,
+#header .dropdown:hover a:visited,
+#header .dropdown:focus a:focus {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #eeeeee;
+}
+
+#header #greeting .dropdown:hover .menu {
+  margin: 0;
+  padding: 0.5em 0;
+  text-transform: none;
+  width: auto;
+}
+
+#header #greeting .dropdown .menu a,
+#header #greeting .dropdown .menu a:visited {
+  border-top: 1px solid #131313;
+}
+
+#header #greeting .dropdown .menu a:hover,
+#header .dropdown .menu a:focus,
+#header .actions a:hover {
+  background: transparent;
+  color: #eeeeee;
+}
+
+#header .search {
+  margin-right: 2em;
+}
+
+#header .search .actions input,
+form.search input[type="text"] {
+  background: #1e1e1e !important;
+  background-image: none !important;
+  color: #dadada !important;
+}
+
+#header .user .current {
+  color: #eeeeee;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+form.search input[type="text"] {
+  border-radius: none;
+}
+
+.actions input:hover {
+  color: #121212;
+  box-shadow: none;
+}
+
+.actions input:focus {
+  outline: 0;
+  border: 0;
+}
+
+.search [role="tooltip"] {
+  border: 1px solid #131313;
+  background: #111111;
+  color: #eeeeee;
+  border-radius: 8px;
+}
+
+#header #search .button {
+  background: #111111;
+  color: #eeeeee;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+#header #search .button:focus {
+  box-shadow: none;
+  color: #eeeeee;
+  background: #000000;
+  outline: 0;
+}
+
+.splash .module h3 {
+  color: #eeeeee;
+  border: 0;
+  text-align: left;
+}
+
+.splash .favorite a,
+.splash .favorite li:nth-of-type(odd) a {
+  color: #cccccc;
+  padding: 0.2em 0em;
+  background: #000000;
+  text-decoration: none;
+}
+
+.splash .favorite a:hover,
+.splash .favorite li:nth-of-type(odd) a:hover,
+.splash .favorite a:focus,
+.splash .favorite li:nth-of-type(odd) a:focus {
+  background: #000000;
+}
+
+.splash .news li {
+  border-bottom: 0px solid #111111;
+  border-radius: 8px;
+}
+
+.splash .news a {
+  border: 0 !important;
+}
+
+.splash .news .heading .link,
+.splash .link a,
+.splash .link a:visited {
+  text-decoration: none;
+  color: #cccccc;
+  border: 0;
+}
+
+.splash .news h4.heading {
+  text-decoration: none;
+}
+
+.splash .news blockquote {
+  color: #eeeeee;
+}
+
+.splash .jump {
+  text-decoration: none;
+}
+
+.system p {
+  color: #eeeeee;
+}
+
+div.comment,
+li.comment {
+  border: 1px solid #131313;
+  color: #eeeeee;
+  background: #000000;
+}
+
+.comment h4.byline {
+  background: #131313;
+}
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions input,
+input[type="submit"],
+button,
+.actions label {
+  background: #212121;
+  border: 0;
+  color: #eeeeee;
+  padding: 0.4em 0.8em;
+  box-shadow: none;
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus {
+  box-shadow: none;
+  border: 0;
+  color: #dddddd;
+}
+
+#footer {
+  background: #111111;
+  border-radius: 0px;
+  border: 0;
+}
+
+#footer a {
+  border: 0;
+  text-decoration: none;
+  line-height: 1;
+}
+
+#footer a:focus {
+  outline: 0;
+}
+
+a.tag,
+a.tag:visited {
+  border: 0;
+  text-decoration: none;
+}
+
+a.tag:hover,
+a.tag:visited:hover {
+  background: transparent;
+}
+
+li.blurb,
+fieldset,
+form dl {
+  border: 0;
+  background: #111111;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: none;
+}
+
+.work .blurb .header,
+.work .blurb .tags,
+.work .blurb .summary {
+  border-bottom: 0px solid #131313;
+  padding-bottom: 1em;
+}
+
+.blurb h4 {
+  color: #bababa;
+}
+
+.blurb h4 a:link:first-of-type {
+  font-weight: 500;
+}
+
+.blurb h4 a:link {
+  color: #bababa;
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+.blurb h4 a[rel="author"] {
+  color: #bababa !important;
+  text-decoration: none;
+}
+
+.blurb ul.series {
+  margin-top: 0;
+  padding-bottom: 1em;
+  border-bottom: 0px solid #131313;
+}
+
+.blurb ul.series a {
+  border: 0;
+  text-decoration: none;
+}
+
+.tags {
+  padding-top: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.tags a.tag {
+  line-height: 1.4;
+}
+
+.tags a.tag:hover {
+  background: transparent;
+}
+
+.tags .warnings a {
+  text-transform: none;
+  text-decoration: none;
+}
+
+.tags .relationships a {
+  background: transparent;
+  font-weight: 400;
+}
+
+.tags .characters a {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.tags .freeforms a {
+  color: #bababa !important;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.blurb .work .summary,
+.splash .blurb blockquote,
+#user-works .summary,
+#user-bookmarks .summary {
+  color: #eeeeee;
+}
+
+.current {
+  background: #000000;
+  color: #bababa;
+  border: 1px solid #111111;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 0.4em 0.8em;
+}
+
+.work .blurb .stats,
+.blurb dl.stats {
+  color: #bababa;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.work .blurb .stats a,
+.blurb dl.stats a {
+  border: 0;
+  color: #bababa !important;
+  text-decoration: none;
+  text-align: left;
+}
+
+.work .blurb .header .datetime,
+.blurb .datetime {
+  color: #bababa;
+  text-transform: none;
+}
+
+select {
+  border: 0;
+}
+
+form dt {
+  border-bottom: 0px solid #131313;
+}
+
+.filters .heading {
+  font-weight: 400;
+}
+
+.help .symbol span {
+  color: #121212 !important;
+}
+
+.filters .expander {
+  color: #bababa;
+}
+
+.filters .expander:focus {
+  outline: 0;
+}
+
+input {
+  border: 0;
+  box-shadow: none;
+}
+
+.dropdown {
+  background: transparent;
+  color: #eeeeee;
+  box-shadow: none;
+}
+
+.dropdown .notice {
+  color: #eeeeee;
+  box-shadow: none;
+}
+
+.autocomplete div.dropdown ul {
+  background: #131313;
+  color: #eeeeee;
+  border: 2px solid #131313;
+  box-shadow: none;
+}
+
+.autocomplete .dropdown ul li:hover {
+  background: #111111;
+  color: #bababa;
+}
+
+.toggled form,
+.dynamic form {
+  box-shadow: none;
+  background: #000000;
+  color: #eeeeee !important;
+}
+
+#ui-datepicker-div {
+  background: #131313;
+  box-shadow: none;
+  border: 1px solid #111111;
+}
+
+.ui-datepicker table {
+  background: #111111;
+}
+
+thead,
+th {
+  background: #000000;
+  border: 1px solid #121212;
+}
+
+.ui-datepicker td {
+  border: 1px solid #121212;
+}
+
+.ui-datepicker tr:hover {
+  background: #131313;
+}
+
+.ui-datepicker td:hover {
+  background: #000000;
+}
+
+.secondary {
+  box-shadow: none;
+  border: 1px solid #121212;
+  background: #111111;
+}
+
+dl.meta {
+  border: 0;
+  background: #111111;
+  border-radius: 8px;
+  margin-top: 1.2em;
+  padding: 1.5em 2em;
+}
+
+dl.meta dt,
+dl.meta dd {
+  float: none;
+}
+
+dl.meta dt {
+  padding: 0;
+}
+
+dl.meta dt,
+dl.meta dt.tags,
+dl.meta dt.tags a,
+dl.meta dt.warning,
+dl.meta dt.warning a {
+  color: #bababa !important;
+  font-weight: 600;
+  text-transform: none;
+  border: 0;
+}
+
+dl.meta dd,
+dl.meta dd a,
+dl.meta dd .commas a {
+  padding: 0;
+  width: auto;
+  color: #eeeeee !important;
+}
+
+dl.meta dd {
+  padding: 0em 0em 0.5em 0em;
+  margin-left: 0;
+  border-bottom: 0px solid #242424;
+}
+
+dl.meta dd a {
+  border: 0;
+  text-decoration: none;
+}
+
+.meta ul li {
+  padding-left: 0;
+}
+
+dd.stats dl.stats dt {
+  text-transform: none;
+  text-align: left;
+}
+
+dd.stats dl.stats dd {
+  padding: 0em 0.5em 0em 0em;
+  font-weight: 500;
+  border: 0;
+  text-align: left;
+}
+
+dd.stats dl.stats dd a {
+  text-decoration: none;
+  border: 0;
+  text-align: left;
+}
+
+#workskin .preface h2.heading {
+  font-weight: 500;
+  margin: 0;
+}
+
+#workskin .preface .byline a {
+  line-height: 1;
+  color: #bababa !important;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.preface h3 {
+  text-transform: none;
+  color: #bababa !important;
+  border-bottom: 0px solid #131313;
+}
+
+.preface blockquote {
+  margin: 0;
+}
+
+.preface .userstuff a,
+.preface blockquote a,
+div.preface .associations a,
+div.preface .series a {
+  border: 0;
+  text-decoration: none;
+}
+
+.preface .jump,
+#notes > p {
+  color: #bababa;
+  border: 0;
+}
+
+.preface .jump a,
+.preface .jump a:hover,
+#notes > p a,
+#notes > p a:hover {
+  color: #bababa !important;
+  text-decoration: none;
+  border: 0;
+}
+
+.chapter .preface {
+  border: 0;
+}
+
+.chapter .preface h3.title {
+  text-transform: none;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.chapter .preface h3.title a {
+  font-weight: 500;
+  text-decoration: none;
+  border: 0;
+}
+
+textarea {
+  border: 2px solid #131313 !important;
+}
+
+textarea:focus {
+  border: 2px solid #111111 !important;
+}
+
+.chapter .userstuff h1,
+.chapter .userstuff h2,
+.chapter .userstuff h3,
+.chapter .userstuff h4,
+.chapter .userstuff h5,
+.chapter .userstuff h6 {
+  color: #eeeeee;
+}
+
+.chapter .userstuff a,
+.chapter .userstuff blockquote a {
+  border: 0;
+  text-decoration: none;
+}
+
+.feedback #kudos a {
+  border: 0;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.thread .even {
+  background: #111111;
+}
+
+.comment a {
+  border: 0;
+  text-decoration: none;
+}
+
+.comment .heading a {
+  font-weight: 500;
+}
+
+.comment .heading .parent {
+  color: #bababa;
+}
+
+.comment div.icon {
+  border-bottom: 0px solid #131313;
+  border-radius: 4px;
+}
+
+.comment .posted,
+.comment .posted span {
+  color: #bababa;
+  text-transform: none;
+}
+
+#dashboard.own {
+  border-radius: 8;
+  border: 0;
+  background: #111111;
+}
+
+#dashboard a {
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+#dashboard a:hover {
+  background: transparent;
+}
+
+#dashboard ul {
+  border-top: 1px solid #131313;
+  padding: 1em 0;
+  text-align: left;
+}
+
+#dashboard .current {
+  background: transparent;
+  color: #bababa;
+  line-height: 1.5;
+}
+
+.dashboard .own {
+  background: #111111;
+}
+
+.home .header h2 {
+  font-weight: 500;
+  border-bottom: 0px solid #111111;
+}
+
+.listbox {
+  border: 1px solid #131313;
+  box-shadow: none;
+  background: #131313;
+}
+
+.listbox > .heading {
+  color: #eeeeee;
+  padding: 0.4em 0.8em;
+}
+
+.listbox .index {
+  background: #111111;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.bookmark .blurb .group {
+  border-bottom: 0px solid;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.bookmark .user {
+  border-top: 1px solid #131313;
+  border-right: 0;
+  border-left: 0;
+  color: #bababa !important;
+}
+
+.bookmark div.user {
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.bookmark div.user .datetime {
+  top: 1.9em;
+  right: 1.5em;
+}
+
+.bookmark .user .byline a {
+  color: #bababa !important;
+  border: 0;
+  text-decoration: none;
+}
+
+.bookmark .blurb ul.series li,
+.bookmark .blurb ul.series li a {
+  color: #bababa !important;
+  padding: 0;
+}
+
+.bookmark .tags {
+  border-top: 1px solid #131313;
+  margin-top: 0.5em;
+  padding-top: 0.7em;
+  margin: 0.2em;
+}
+
+.bookmark .summary {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid #131313;
+  border-bottom: 0px solid;
+}
+
+#modal {
+  background: #000000;
+  border: 2px solid #111111;
+  box-shadow: none;
+}
+
+#modal .content {
+  border-bottom: 0px solid #b7b7b7;
+  border-radius: 8px;
+}
+
+#modal .content a,
+#modal content a:visited {
+  border: 0;
+  text-decoration: none;
+}
+
+form .notice,
+form ul.notes {
+  box-shadow: none;
+}
+
+form.verbose legend,
+.verbose form legend {
+  box-shadow: none;
+  border: 0;
+  background: #131313;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.required {
+  color: #eeeeee;
+}
+
+fieldset fieldset {
+  background: #111111;
+  border-radius: 8px;
+}
+
+.post .meta dd ul li,
+.footnote {
+  color: #eeeeee;
+}
+
+.dashboard ul.skin li {
+  background: #111111;
+  border-radius: 8px;
+}
+
+.picture .header {
+  border-bottom: 0px solid;
+}
+
+dl.index dd {
+  background: #000000;
+}
+
+.subscription a {
+  border: 0;
+  text-decoration: none;
+}
+
+.subscription dt {
+  margin-top: 1.5em;
+  font-weight: 500;
+}
+
+.subscription dd {
+  padding: 0 !important;
+  margin: 0.2em 0em !important;
+  border-bottom: 0px solid #111111;
+  border-radius: 8px;
+}
+
+.subscription input[type="submit"] {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: none;
+}
+
+form dd.required {
+  color: #eeeeee;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  box-shadow: none;
+  border: 1px solid #111111;
+  border-radius: 8px;
+  background: #131313;
+}
+
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed {
+  background: #000000;
+}
+
+.summary a {
+  border: 0;
+  text-decoration: none;
+}
+
+.error,
+.comment_error,
+.alert.flash {
+  background: #C62828;
+  border: 1px solid #B71C1C;
+  box-shadow: none;
+}
+
+.alert .userstuff {
+  background: #D84315;
+  border-color: #BF360C;
+  color: #eeeeee;
+}
+
+.alert a {
+  border: 0;
+  text-decoration: none;
+}
+
+.announcement input[type="submit"],
+.announcement .action {
+  color: #e5ff00;
+}
+
+.wrapper > dl.meta {
+  padding: 1em;
+}
+
+div.userstuff a {
+  border-bottom: 0;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+div.userstuff li {
+  line-height: 1.3em;
+  border-radius: 8px;
+}
+
+h2.heading a {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+div#dashboard a {
+  margin: 0.8em 0;
+}
+
+#dashboard,
+#dashboard.own {
+  border-color: #131313;
+}
+
+div#user-fandoms a {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+dl.stats dd.chapters a {
+  background-color: #000000;
+  padding: 0.3em 0.5em;
+  border-radius: 15%;
+  transition: 0.3s;
+}
+
+dl.stats dd.chapters a:hover {
+  color: #ffffff !important;
+}
+
+.required-tags {
+  display: none !important;
+}
