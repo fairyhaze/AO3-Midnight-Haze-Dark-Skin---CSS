@@ -1,20 +1,79 @@
+/*
+===============================================================================
+
+AO3 Midnight Soft Dark Minimalist Skin
+Version: 1.0
+Author: fairyhaze
+Last Updated: 2025-08-30
+
+-------------------------------------------------------------------------------
+
+A sleek, dark, and readable custom CSS skin for Archive of Our Own (AO3).
+Designed for easy-on-the-eyes reading with soft highlights and minimalist style.
+
+Repository:
+https://github.com/fairyhaze/AO3-Midnight-Soft-Dark-Minimalist-Skin-CSS
+
+Usage:
+1. Copy the CSS code into AO3's Custom Stylesheet field
+   (Account Settings → Appearance → Custom Stylesheet)
+2. Save changes and refresh the site
+
+Features:
+- Dark backgrounds (#060606) across the site
+- Soft off-white (#eeeeee) text with subtle gray (#bababa) accents
+- Rounded corners for forms, comments, and headers
+- Minimalist navigation and menus
+- Alerts and errors highlighted in red (#C62828)
+- Hidden required tags for a cleaner interface
+- Uses DM Sans font for all text
+
+License:
+All rights reserved. Use for personal AO3 use only. Modification, redistribution,
+or commercial use is not permitted.
+
+===============================================================================
+/*
+
+AO3 Midnight Soft Dark Minimalist Skin
+Version: 1.0
+Author: fairyhaze
+Last Updated: 2025-08-30
+
+Purpose: Global dark theme with soft contrast, minimal borders, rounded corners,
+and unobtrusive navigation for AO3 site UI (not a work skin). Apply as a Site Skin.
+
+Notes: Uses AO3’s standard structure: header, greeting, splash, blurb, meta, listbox,
+comments, dashboard, etc. AO3 allows a limited CSS subset in skins.
+
+If chaining to a parent skin, use Advanced → Add parent skin in the skin editor.
+Reference collections of AO3 skins exist for comparison and patterns.
+*/
+
+
+
+
+/* Links: unify default and visited link color to off-white for readability */
 a,
 a:visited {
-  color: #eeeeee !important;
+color: #eeeeee !important;
 }
 
+/* Remove default focus outlines/borders to keep minimal look (note: accessibility tradeoff) */
 a:focus,
 img:focus,
 span:focus,
 *:focus {
-  outline: 0;
-  border: 0;
+outline: 0;
+border: 0;
 }
 
+/* Base inline text color adjustment for spans to match theme */
 span {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Headings: tighten line-height slightly for compact headers */
 h1,
 h2,
 h3,
@@ -22,269 +81,286 @@ h4,
 h5,
 h6,
 .heading {
-  line-height: 1.3em;
+line-height: 1.3em;
 }
 
+/* Global background and text across page wrappers: deep black, soft white text; no shadows */
 html,
 body,
 #inner,
 #outer,
 .wrapper {
-  background: #060606;
-  color: #f2f2f2;
-  box-shadow: none;
+background: #060606;
+color: #f2f2f2;
+box-shadow: none;
 }
 
+/* Flash messages: ensure readable text and remove shadows */
 .flash {
-  color: #eeeeee !important;
-  box-shadow: none;
+color: #eeeeee !important;
+box-shadow: none;
 }
 
+/* Notices (system/comment): cool dark surfaces with subtle borders */
 .notice,
 .comment_notice {
-  background: #37474F;
-  border: 1px solid #263238;
-  box-shadow: none;
+background: #37474F;
+border: 1px solid #263238;
+box-shadow: none;
 }
 
+/* Reading history marker (“viewed”): pill background and muted text */
 .reading h4.viewed,
 .reading h4.viewed span {
-  background: #111111;
-  border-radius: 8px;
-  color: #bababa !important;
-  padding: 0em;
+background: #111111;
+border-radius: 8px;
+color: #bababa !important;
+padding: 0em;
 }
 
+/* Header and primary nav: dark surfaces, no shadows, high-contrast text */
 #header,
 #header .primary {
-  background: #131313;
-  box-shadow: none;
-  color: #eeeeee !important;
+background: #131313;
+box-shadow: none;
+color: #eeeeee !important;
 }
 
+/* Header spacing and AO3 wordmark/heading alignment */
 #header {
-  padding-top: 1em;
+padding-top: 1em;
 }
-
 #header .heading {
-  margin-left: 2em;
+margin-left: 2em;
 }
-
 #header .heading a {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Primary nav vertical spacing */
 #header .primary {
-  margin-top: 1em;
+margin-top: 1em;
 }
 
+/* Greeting (user menu) link color and avatar visibility removal for a text-only look */
 #greeting .user > li a {
-  color: #eeeeee;
+color: #eeeeee;
 }
-
 #greeting img {
-  display: none;
+display: none;
 }
 
+/* Dropdown toggle: reduce underline/border signaling, keep compact paddings */
 #header .primary a.dropdown-toggle {
-  padding: 0.7em 0.5em;
-  border-bottom: 0px solid;
+padding: 0.7em 0.5em;
+border-bottom: 0px solid;
 }
 
+/* Dropdown hover: unify hover background/text without borders */
 #header .primary .dropdown:hover a.dropdown-toggle {
-  background: #131313;
-  color: #eeeeee;
-  border-bottom: 0px solid;
+background: #131313;
+color: #eeeeee;
+border-bottom: 0px solid;
 }
 
+/* Top menu container: remove default background/shadows/padding for minimal bar */
 #header .menu {
-  background: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
+background: none;
+box-shadow: none;
+padding: 0;
+margin: 0;
 }
 
+/* Menu items: dark pill chips with rounded corners for each li */
 #header .menu li {
-  background: #111111;
-  border-radius: 8px;
-  margin: 0;
-  border: 0;
-  padding: 0.1em 0.5em;
+background: #111111;
+border-radius: 8px;
+margin: 0;
+border: 0;
+padding: 0.1em 0.5em;
 }
 
+/* Header links: always no underline, soft white text across states */
 #header a,
 #header a:visited,
 #header .primary .dropdown:hover a {
-  color: #eeeeee;
-  text-decoration: none !important;
+color: #eeeeee;
+text-decoration: none !important;
 }
-
 #header a:hover,
 #header a:visited:hover,
 #header .primary .dropdown:hover a:hover {
-  background: transparent;
-  color: #eeeeee;
-  text-decoration: none !important;
+background: transparent;
+color: #eeeeee;
+text-decoration: none !important;
 }
 
+/* Login/greeting bar spacing and typographic normalization */
 #login,
 #greeting {
-  margin-right: 3.5em;
-  margin-top: 0.5em;
-  text-transform: none;
-  font-weight: 500;
+margin-right: 3.5em;
+margin-top: 0.5em;
+text-transform: none;
+font-weight: 500;
 }
-
 #greeting .user>li {
-  margin: 0;
+margin: 0;
 }
 
+/* Dropdown interactions: avoid borders/backgrounds on hover/focus to keep clean */
 #header .dropdown:hover a,
 #header .dropdown:hover a:visited,
 #header .dropdown:focus a:focus {
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: #eeeeee;
+border: 0;
+border-radius: 0;
+background: transparent;
+color: #eeeeee;
 }
 
+/* Greeting dropdown menu box: reset padding/width and keep casing */
 #header #greeting .dropdown:hover .menu {
-  margin: 0;
-  padding: 0.5em 0;
-  text-transform: none;
-  width: auto;
+margin: 0;
+padding: 0.5em 0;
+text-transform: none;
+width: auto;
 }
 
+/* Separator line within dropdown menu items */
 #header #greeting .dropdown .menu a,
 #header #greeting .dropdown .menu a:visited {
-  border-top: 1px solid #131313;
+border-top: 1px solid #131313;
 }
 
+/* Dropdown menu item hover/focus: transparent background, maintain color */
 #header #greeting .dropdown .menu a:hover,
 #header .dropdown .menu a:focus,
 #header .actions a:hover {
-  background: transparent;
-  color: #eeeeee;
+background: transparent;
+color: #eeeeee;
 }
 
+/* Header search spacing */
 #header .search {
-  margin-right: 2em;
+margin-right: 2em;
 }
 
+/* Global search inputs: dark fields, light text; remove gradients */
 #header .search .actions input,
 form.search input[type="text"] {
-  background: #1e1e1e !important;
-  background-image: none !important;
-  color: #dadada !important;
+background: #1e1e1e !important;
+background-image: none !important;
+color: #dadada !important;
 }
 
+/* Current user in header: reduce weight and remove underline look */
 #header .user .current {
-  color: #eeeeee;
-  text-decoration: none;
-  font-weight: 400;
+color: #eeeeee;
+text-decoration: none;
+font-weight: 400;
 }
 
+/* AO3 input rounding normalizer (no rounded browser default) */
 form.search input[type="text"] {
-  border-radius: none;
+border-radius: none;
 }
 
+/* Global action inputs hover/focus: subtle changes only, no shadows/outlines */
 .actions input:hover {
-  color: #121212;
-  box-shadow: none;
+color: #121212;
+box-shadow: none;
 }
-
 .actions input:focus {
-  outline: 0;
-  border: 0;
+outline: 0;
+border: 0;
 }
 
+/* Search tooltip: dark bubble with rounded corners */
 .search [role="tooltip"] {
-  border: 1px solid #131313;
-  background: #111111;
-  color: #eeeeee;
-  border-radius: 8px;
+border: 1px solid #131313;
+background: #111111;
+color: #eeeeee;
+border-radius: 8px;
 }
 
+/* Header search button: dark pill, no forced uppercase */
 #header #search .button {
-  background: #111111;
-  color: #eeeeee;
-  border-radius: 8px;
-  text-transform: none;
-  font-weight: 500;
+background: #111111;
+color: #eeeeee;
+border-radius: 8px;
+text-transform: none;
+font-weight: 500;
 }
-
 #header #search .button:focus {
-  box-shadow: none;
-  color: #eeeeee;
-  background: #000000;
-  outline: 0;
+box-shadow: none;
+color: #eeeeee;
+background: #000000;
+outline: 0;
 }
 
+/* Splash page sections: headings and favorite links restyle */
 .splash .module h3 {
-  color: #eeeeee;
-  border: 0;
-  text-align: left;
+color: #eeeeee;
+border: 0;
+text-align: left;
 }
-
 .splash .favorite a,
 .splash .favorite li:nth-of-type(odd) a {
-  color: #cccccc;
-  padding: 0.2em 0em;
-  background: #000000;
-  text-decoration: none;
+color: #cccccc;
+padding: 0.2em 0em;
+background: #000000;
+text-decoration: none;
 }
-
 .splash .favorite a:hover,
 .splash .favorite li:nth-of-type(odd) a:hover,
 .splash .favorite a:focus,
 .splash .favorite li:nth-of-type(odd) a:focus {
-  background: #000000;
+background: #000000;
 }
 
+/* Splash news block: soft borders off, rounded containers */
 .splash .news li {
-  border-bottom: 0px solid #111111;
-  border-radius: 8px;
+border-bottom: 0px solid #111111;
+border-radius: 8px;
 }
-
 .splash .news a {
-  border: 0 !important;
+border: 0 !important;
 }
-
 .splash .news .heading .link,
 .splash .link a,
 .splash .link a:visited {
-  text-decoration: none;
-  color: #cccccc;
-  border: 0;
+text-decoration: none;
+color: #cccccc;
+border: 0;
 }
-
 .splash .news h4.heading {
-  text-decoration: none;
+text-decoration: none;
 }
-
 .splash .news blockquote {
-  color: #eeeeee;
+color: #eeeeee;
 }
-
 .splash .jump {
-  text-decoration: none;
+text-decoration: none;
 }
 
+/* System text color normalization */
 .system p {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Comments: dark card with subtle border; consistent background */
 div.comment,
 li.comment {
-  border: 1px solid #131313;
-  color: #eeeeee;
-  background: #000000;
+border: 1px solid #131313;
+color: #eeeeee;
+background: #000000;
 }
 
+/* Comment byline header bar */
 .comment h4.byline {
-  background: #131313;
+background: #131313;
 }
 
+/* Global actions (links, buttons, inputs): flat dark buttons without borders */
 .actions a,
 .actions a:link,
 .action,
@@ -293,13 +369,12 @@ li.comment {
 input[type="submit"],
 button,
 .actions label {
-  background: #212121;
-  border: 0;
-  color: #eeeeee;
-  padding: 0.4em 0.8em;
-  box-shadow: none;
+background: #212121;
+border: 0;
+color: #eeeeee;
+padding: 0.4em 0.8em;
+box-shadow: none;
 }
-
 .actions a:hover,
 .actions input:hover,
 .actions a:focus,
@@ -307,633 +382,619 @@ button,
 label.action:hover,
 .action:hover,
 .action:focus {
-  box-shadow: none;
-  border: 0;
-  color: #dddddd;
+box-shadow: none;
+border: 0;
+color: #dddddd;
 }
 
+/* Footer: smooth dark strip with minimalist links */
 #footer {
-  background: #111111;
-  border-radius: 0px;
-  border: 0;
+background: #111111;
+border-radius: 0px;
+border: 0;
 }
-
 #footer a {
-  border: 0;
-  text-decoration: none;
-  line-height: 1;
+border: 0;
+text-decoration: none;
+line-height: 1;
 }
-
 #footer a:focus {
-  outline: 0;
+outline: 0;
 }
 
+/* Tag links: remove underline and hover backgrounds for cleaner tag clouds */
 a.tag,
 a.tag:visited {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
-
 a.tag:hover,
 a.tag:visited:hover {
-  background: transparent;
+background: transparent;
 }
 
+/* Core content containers (blurbs, fieldsets, form dls): dark panels with rounded corners */
 li.blurb,
 fieldset,
 form dl {
-  border: 0;
-  background: #111111;
-  border-radius: 8px;
-  padding: 1em;
-  box-shadow: none;
+border: 0;
+background: #111111;
+border-radius: 8px;
+padding: 1em;
+box-shadow: none;
 }
 
+/* Work blurb sub-sections: remove bottom borders; increase spacing */
 .work .blurb .header,
 .work .blurb .tags,
 .work .blurb .summary {
-  border-bottom: 0px solid #131313;
-  padding-bottom: 1em;
+border-bottom: 0px solid #131313;
+padding-bottom: 1em;
 }
 
+/* Blurb title/meta: muted color and emphasized first title link */
 .blurb h4 {
-  color: #bababa;
+color: #bababa;
 }
-
 .blurb h4 a:link:first-of-type {
-  font-weight: 500;
+font-weight: 500;
 }
-
 .blurb h4 a:link {
-  color: #bababa;
-  border-bottom: 0;
-  text-decoration: none;
+color: #bababa;
+border-bottom: 0;
+text-decoration: none;
 }
-
 .blurb h4 a[rel="author"] {
-  color: #bababa !important;
-  text-decoration: none;
+color: #bababa !important;
+text-decoration: none;
 }
 
+/* Series list inside blurbs: spacing and no underline */
 .blurb ul.series {
-  margin-top: 0;
-  padding-bottom: 1em;
-  border-bottom: 0px solid #131313;
+margin-top: 0;
+padding-bottom: 1em;
+border-bottom: 0px solid #131313;
 }
-
 .blurb ul.series a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
 
+/* Tag block paddings and hover behavior */
 .tags {
-  padding-top: 1em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+padding-top: 1em;
+padding-left: 0.5em;
+padding-right: 0.5em;
 }
-
 .tags a.tag {
-  line-height: 1.4;
+line-height: 1.4;
 }
-
 .tags a.tag:hover {
-  background: transparent;
+background: transparent;
 }
 
+/* Tag categories: normalize casing/weight and colors */
 .tags .warnings a {
-  text-transform: none;
-  text-decoration: none;
+text-transform: none;
+text-decoration: none;
 }
-
 .tags .relationships a {
-  background: transparent;
-  font-weight: 400;
+background: transparent;
+font-weight: 400;
 }
-
 .tags .characters a {
-  font-weight: 400;
-  text-decoration: none;
+font-weight: 400;
+text-decoration: none;
 }
-
 .tags .freeforms a {
-  color: #bababa !important;
-  text-decoration: none;
-  font-weight: 300;
+color: #bababa !important;
+text-decoration: none;
+font-weight: 300;
 }
 
+/* Summaries and quotes: lighten text inside blurbs and lists */
 .blurb .work .summary,
 .splash .blurb blockquote,
 #user-works .summary,
 #user-bookmarks .summary {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Current pagination/filter pill: dark rounded chip with border */
 .current {
-  background: #000000;
-  color: #bababa;
-  border: 1px solid #111111;
-  box-shadow: none;
-  border-radius: 8px;
-  padding: 0.4em 0.8em;
+background: #000000;
+color: #bababa;
+border: 1px solid #111111;
+box-shadow: none;
+border-radius: 8px;
+padding: 0.4em 0.8em;
 }
 
+/* Blurb stats area: muted color and left-aligned links */
 .work .blurb .stats,
 .blurb dl.stats {
-  color: #bababa;
-  margin-bottom: 1em;
-  text-align: left;
+color: #bababa;
+margin-bottom: 1em;
+text-align: left;
 }
-
 .work .blurb .stats a,
 .blurb dl.stats a {
-  border: 0;
-  color: #bababa !important;
-  text-decoration: none;
-  text-align: left;
+border: 0;
+color: #bababa !important;
+text-decoration: none;
+text-align: left;
 }
 
+/* Datetime text: subdued tone and normal casing */
 .work .blurb .header .datetime,
 .blurb .datetime {
-  color: #bababa;
-  text-transform: none;
+color: #bababa;
+text-transform: none;
 }
 
+/* Selects and form parts: flatten borders and dividers for cleaner forms */
 select {
-  border: 0;
+border: 0;
 }
-
 form dt {
-  border-bottom: 0px solid #131313;
+border-bottom: 0px solid #131313;
 }
 
+/* Filter headings: soften weight and control focus */
 .filters .heading {
-  font-weight: 400;
+font-weight: 400;
 }
-
 .help .symbol span {
-  color: #121212 !important;
+color: #121212 !important;
 }
-
 .filters .expander {
-  color: #bababa;
+color: #bababa;
 }
-
 .filters .expander:focus {
-  outline: 0;
+outline: 0;
 }
 
+/* Inputs: remove default borders/shadows to rely on background contrast */
 input {
-  border: 0;
-  box-shadow: none;
+border: 0;
+box-shadow: none;
 }
 
+/* Dropdown containers (general and autocomplete): dark panels without shadows */
 .dropdown {
-  background: transparent;
-  color: #eeeeee;
-  box-shadow: none;
+background: transparent;
+color: #eeeeee;
+box-shadow: none;
 }
-
 .dropdown .notice {
-  color: #eeeeee;
-  box-shadow: none;
+color: #eeeeee;
+box-shadow: none;
 }
-
 .autocomplete div.dropdown ul {
-  background: #131313;
-  color: #eeeeee;
-  border: 2px solid #131313;
-  box-shadow: none;
+background: #131313;
+color: #eeeeee;
+border: 2px solid #131313;
+box-shadow: none;
 }
-
 .autocomplete .dropdown ul li:hover {
-  background: #111111;
-  color: #bababa;
+background: #111111;
+color: #bababa;
 }
 
+/* Toggled/dynamic forms: dark container with enforced light text */
 .toggled form,
 .dynamic form {
-  box-shadow: none;
-  background: #000000;
-  color: #eeeeee !important;
+box-shadow: none;
+background: #000000;
+color: #eeeeee !important;
 }
 
+/* Datepicker: dark theme for calendar widget */
 #ui-datepicker-div {
-  background: #131313;
-  box-shadow: none;
-  border: 1px solid #111111;
+background: #131313;
+box-shadow: none;
+border: 1px solid #111111;
 }
-
 .ui-datepicker table {
-  background: #111111;
+background: #111111;
 }
-
 thead,
 th {
-  background: #000000;
-  border: 1px solid #121212;
+background: #000000;
+border: 1px solid #121212;
 }
-
 .ui-datepicker td {
-  border: 1px solid #121212;
+border: 1px solid #121212;
 }
-
 .ui-datepicker tr:hover {
-  background: #131313;
+background: #131313;
 }
-
 .ui-datepicker td:hover {
-  background: #000000;
+background: #000000;
 }
 
+/* Secondary sidebar blocks: dark card with subtle border */
 .secondary {
-  box-shadow: none;
-  border: 1px solid #121212;
-  background: #111111;
+box-shadow: none;
+border: 1px solid #121212;
+background: #111111;
 }
 
+/* Work meta block (on work pages): dark panel with comfortable padding; stack dt/dd */
 dl.meta {
-  border: 0;
-  background: #111111;
-  border-radius: 8px;
-  margin-top: 1.2em;
-  padding: 1.5em 2em;
+border: 0;
+background: #111111;
+border-radius: 8px;
+margin-top: 1.2em;
+padding: 1.5em 2em;
 }
-
 dl.meta dt,
 dl.meta dd {
-  float: none;
+float: none;
 }
-
 dl.meta dt {
-  padding: 0;
+padding: 0;
 }
 
+/* Meta labels: emphasize labels/tags/warnings with weight and color */
 dl.meta dt,
 dl.meta dt.tags,
 dl.meta dt.tags a,
 dl.meta dt.warning,
 dl.meta dt.warning a {
-  color: #bababa !important;
-  font-weight: 600;
-  text-transform: none;
-  border: 0;
+color: #bababa !important;
+font-weight: 600;
+text-transform: none;
+border: 0;
 }
 
+/* Meta values: light text, no underline, tighter dd spacing with subtle dividers removed */
 dl.meta dd,
 dl.meta dd a,
 dl.meta dd .commas a {
-  padding: 0;
-  width: auto;
-  color: #eeeeee !important;
+padding: 0;
+width: auto;
+color: #eeeeee !important;
 }
-
 dl.meta dd {
-  padding: 0em 0em 0.5em 0em;
-  margin-left: 0;
-  border-bottom: 0px solid #242424;
+padding: 0em 0em 0.5em 0em;
+margin-left: 0;
+border-bottom: 0px solid #242424;
 }
-
 dl.meta dd a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
-
 .meta ul li {
-  padding-left: 0;
+padding-left: 0;
 }
 
+/* Stats inside meta: normalize alignment and weight */
 dd.stats dl.stats dt {
-  text-transform: none;
-  text-align: left;
+text-transform: none;
+text-align: left;
 }
-
 dd.stats dl.stats dd {
-  padding: 0em 0.5em 0em 0em;
-  font-weight: 500;
-  border: 0;
-  text-align: left;
+padding: 0em 0.5em 0em 0em;
+font-weight: 500;
+border: 0;
+text-align: left;
 }
-
 dd.stats dl.stats dd a {
-  text-decoration: none;
-  border: 0;
-  text-align: left;
+text-decoration: none;
+border: 0;
+text-align: left;
 }
 
+/* Preface header and byline on work pages: adjust weights, colors, casing */
 #workskin .preface h2.heading {
-  font-weight: 500;
-  margin: 0;
+font-weight: 500;
+margin: 0;
 }
-
 #workskin .preface .byline a {
-  line-height: 1;
-  color: #bababa !important;
-  text-decoration: none;
-  text-transform: none;
+line-height: 1;
+color: #bababa !important;
+text-decoration: none;
+text-transform: none;
 }
-
 .preface h3 {
-  text-transform: none;
-  color: #bababa !important;
-  border-bottom: 0px solid #131313;
+text-transform: none;
+color: #bababa !important;
+border-bottom: 0px solid #131313;
 }
-
 .preface blockquote {
-  margin: 0;
+margin: 0;
 }
 
+/* Preface links: no underline for a clean intro area */
 .preface .userstuff a,
 .preface blockquote a,
 div.preface .associations a,
 div.preface .series a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
 
+/* Jump links and notes: mute text color and remove borders */
 .preface .jump,
 #notes > p {
-  color: #bababa;
-  border: 0;
+color: #bababa;
+border: 0;
 }
-
 .preface .jump a,
 .preface .jump a:hover,
 #notes > p a,
 #notes > p a:hover {
-  color: #bababa !important;
-  text-decoration: none;
-  border: 0;
+color: #bababa !important;
+text-decoration: none;
+border: 0;
 }
 
+/* Chapter preface: remove borders and normalize title styles */
 .chapter .preface {
-  border: 0;
+border: 0;
 }
-
 .chapter .preface h3.title {
-  text-transform: none;
-  font-weight: 400;
-  text-decoration: none;
+text-transform: none;
+font-weight: 400;
+text-decoration: none;
 }
-
 .chapter .preface h3.title a {
-  font-weight: 500;
-  text-decoration: none;
-  border: 0;
+font-weight: 500;
+text-decoration: none;
+border: 0;
 }
 
+/* Textareas: use darker border focus ring for visibility within dark UI */
 textarea {
-  border: 2px solid #131313 !important;
+border: 2px solid #131313 !important;
 }
-
 textarea:focus {
-  border: 2px solid #111111 !important;
+border: 2px solid #111111 !important;
 }
 
+/* Heading colors inside chapter content to ensure contrast */
 .chapter .userstuff h1,
 .chapter .userstuff h2,
 .chapter .userstuff h3,
 .chapter .userstuff h4,
 .chapter .userstuff h5,
 .chapter .userstuff h6 {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Chapter links: remove underlines to match global link style */
 .chapter .userstuff a,
 .chapter .userstuff blockquote a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
 
+/* Kudos area link cleanup */
 .feedback #kudos a {
-  border: 0;
-  text-decoration: none;
-  line-height: 1;
+border: 0;
+text-decoration: none;
+line-height: 1;
 }
 
+/* Comment threads alternation: even rows with dark background */
 .thread .even {
-  background: #111111;
+background: #111111;
 }
 
+/* Comment link cleanup and minor emphasis on author/byline */
 .comment a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
-
 .comment .heading a {
-  font-weight: 500;
+font-weight: 500;
 }
-
 .comment .heading .parent {
-  color: #bababa;
+color: #bababa;
 }
-
 .comment div.icon {
-  border-bottom: 0px solid #131313;
-  border-radius: 4px;
+border-bottom: 0px solid #131313;
+border-radius: 4px;
 }
-
 .comment .posted,
 .comment .posted span {
-  color: #bababa;
-  text-transform: none;
+color: #bababa;
+text-transform: none;
 }
 
+/* Personal dashboard container: dark panel, no border edges, rounded look */
 #dashboard.own {
-  border-radius: 8;
-  border: 0;
-  background: #111111;
+border-radius: 8;
+border: 0;
+background: #111111;
 }
-
 #dashboard a {
-  text-decoration: none;
-  line-height: 1.5;
+text-decoration: none;
+line-height: 1.5;
 }
-
 #dashboard a:hover {
-  background: transparent;
+background: transparent;
 }
-
 #dashboard ul {
-  border-top: 1px solid #131313;
-  padding: 1em 0;
-  text-align: left;
+border-top: 1px solid #131313;
+padding: 1em 0;
+text-align: left;
 }
-
 #dashboard .current {
-  background: transparent;
-  color: #bababa;
-  line-height: 1.5;
+background: transparent;
+color: #bababa;
+line-height: 1.5;
 }
-
 .dashboard .own {
-  background: #111111;
+background: #111111;
 }
 
+/* Home-heading tweaks */
 .home .header h2 {
-  font-weight: 500;
-  border-bottom: 0px solid #111111;
+font-weight: 500;
+border-bottom: 0px solid #111111;
 }
 
+/* Listbox blocks (indexes/sidebars): dark containers with minimal chrome */
 .listbox {
-  border: 1px solid #131313;
-  box-shadow: none;
-  background: #131313;
+border: 1px solid #131313;
+box-shadow: none;
+background: #131313;
 }
-
 .listbox > .heading {
-  color: #eeeeee;
-  padding: 0.4em 0.8em;
+color: #eeeeee;
+padding: 0.4em 0.8em;
 }
-
 .listbox .index {
-  background: #111111;
-  box-shadow: none;
-  border-radius: 8px;
+background: #111111;
+box-shadow: none;
+border-radius: 8px;
 }
 
+/* Bookmark blurb internals: separators muted; user panel styling */
 .bookmark .blurb .group {
-  border-bottom: 0px solid;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
+border-bottom: 0px solid;
+padding-bottom: 0.5em;
+margin-bottom: 0.5em;
 }
-
 .bookmark .user {
-  border-top: 1px solid #131313;
-  border-right: 0;
-  border-left: 0;
-  color: #bababa !important;
+border-top: 1px solid #131313;
+border-right: 0;
+border-left: 0;
+color: #bababa !important;
 }
-
 .bookmark div.user {
-  padding: 1em;
-  box-sizing: border-box;
-  border-radius: 8px;
+padding: 1em;
+box-sizing: border-box;
+border-radius: 8px;
 }
-
 .bookmark div.user .datetime {
-  top: 1.9em;
-  right: 1.5em;
+top: 1.9em;
+right: 1.5em;
 }
-
 .bookmark .user .byline a {
-  color: #bababa !important;
-  border: 0;
-  text-decoration: none;
+color: #bababa !important;
+border: 0;
+text-decoration: none;
 }
-
 .bookmark .blurb ul.series li,
 .bookmark .blurb ul.series li a {
-  color: #bababa !important;
-  padding: 0;
+color: #bababa !important;
+padding: 0;
 }
-
 .bookmark .tags {
-  border-top: 1px solid #131313;
-  margin-top: 0.5em;
-  padding-top: 0.7em;
-  margin: 0.2em;
+border-top: 1px solid #131313;
+margin-top: 0.5em;
+padding-top: 0.7em;
+margin: 0.2em;
 }
-
 .bookmark .summary {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-top: 1px solid #131313;
-  border-bottom: 0px solid;
+padding-top: 1em;
+padding-bottom: 1em;
+border-top: 1px solid #131313;
+border-bottom: 0px solid;
 }
 
+/* Modal dialogs: dark sheet with rounded content */
 #modal {
-  background: #000000;
-  border: 2px solid #111111;
-  box-shadow: none;
+background: #000000;
+border: 2px solid #111111;
+box-shadow: none;
 }
-
 #modal .content {
-  border-bottom: 0px solid #b7b7b7;
-  border-radius: 8px;
+border-bottom: 0px solid #b7b7b7;
+border-radius: 8px;
 }
-
 #modal .content a,
 #modal content a:visited {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
 
+/* Form hints/notices: remove shadows; restyle verbose form legends */
 form .notice,
 form ul.notes {
-  box-shadow: none;
+box-shadow: none;
 }
-
 form.verbose legend,
 .verbose form legend {
-  box-shadow: none;
-  border: 0;
-  background: #131313;
-  font-weight: 500;
-  text-transform: none;
+box-shadow: none;
+border: 0;
+background: #131313;
+font-weight: 500;
+text-transform: none;
 }
 
+/* Required marks: light color (iconography remains subtle) */
 .required {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Nested fieldsets: dark panels with rounded corners */
 fieldset fieldset {
-  background: #111111;
-  border-radius: 8px;
+background: #111111;
+border-radius: 8px;
 }
 
+/* Post footnotes: ensure readable color */
 .post .meta dd ul li,
 .footnote {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Skin list items in dashboard: dark rounded tiles */
 .dashboard ul.skin li {
-  background: #111111;
-  border-radius: 8px;
+background: #111111;
+border-radius: 8px;
 }
 
+/* Picture header: remove bottom border for flush image header */
 .picture .header {
-  border-bottom: 0px solid;
+border-bottom: 0px solid;
 }
 
+/* Index detail cells: darker background for contrast in lists */
 dl.index dd {
-  background: #000000;
+background: #000000;
 }
 
+/* Subscription settings: clean links and spacing; gentle separators */
 .subscription a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
-
 .subscription dt {
-  margin-top: 1.5em;
-  font-weight: 500;
+margin-top: 1.5em;
+font-weight: 500;
 }
-
 .subscription dd {
-  padding: 0 !important;
-  margin: 0.2em 0em !important;
-  border-bottom: 0px solid #111111;
-  border-radius: 8px;
+padding: 0 !important;
+margin: 0.2em 0em !important;
+border-bottom: 0px solid #111111;
+border-radius: 8px;
 }
-
 .subscription input[type="submit"] {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  text-transform: none;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+text-transform: none;
 }
 
+/* Required dd within forms: maintain readable labeling */
 form dd.required {
-  color: #eeeeee;
+color: #eeeeee;
 }
 
+/* Listbox variant: subtle border and rounding retained inside fieldsets */
 .listbox,
 fieldset fieldset.listbox {
-  box-shadow: none;
-  border: 1px solid #111111;
-  border-radius: 8px;
-  background: #131313;
+box-shadow: none;
+border: 1px solid #111111;
+border-radius: 8px;
+background: #131313;
 }
 
+/* State backgrounds used across AO3 (draft/unread/etc.): unify to black */
 .own,
 .draft,
 .draft .wrapper,
@@ -941,83 +1002,88 @@ fieldset fieldset.listbox {
 .child,
 .unwrangled,
 .unreviewed {
-  background: #000000;
+background: #000000;
 }
 
+/* General summary links: remove underlines to match style */
 .summary a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
 
+/* Error/alert styling: accessible red tones for visibility, flat shadows */
 .error,
 .comment_error,
 .alert.flash {
-  background: #C62828;
-  border: 1px solid #B71C1C;
-  box-shadow: none;
+background: #C62828;
+border: 1px solid #B71C1C;
+box-shadow: none;
 }
-
 .alert .userstuff {
-  background: #D84315;
-  border-color: #BF360C;
-  color: #eeeeee;
+background: #D84315;
+border-color: #BF360C;
+color: #eeeeee;
 }
-
 .alert a {
-  border: 0;
-  text-decoration: none;
+border: 0;
+text-decoration: none;
 }
 
+/* Announcement buttons: distinctive neon accent for callouts */
 .announcement input[type="submit"],
 .announcement .action {
-  color: #e5ff00;
+color: #e5ff00;
 }
 
+/* Wrapper meta padding refinement */
 .wrapper > dl.meta {
-  padding: 1em;
+padding: 1em;
 }
 
+/* Userstuff general link/LI polish: remove underline and tighten leading */
 div.userstuff a {
-  border-bottom: 0;
-  text-decoration: none;
-  border-radius: 8px;
+border-bottom: 0;
+text-decoration: none;
+border-radius: 8px;
 }
-
 div.userstuff li {
-  line-height: 1.3em;
-  border-radius: 8px;
+line-height: 1.3em;
+border-radius: 8px;
 }
 
+/* Headings with links: remove underline */
 h2.heading a {
-  border-bottom: 0;
-  text-decoration: none;
+border-bottom: 0;
+text-decoration: none;
 }
 
+/* Dashboard link spacing and border color harmonization */
 div#dashboard a {
-  margin: 0.8em 0;
+margin: 0.8em 0;
 }
-
 #dashboard,
 #dashboard.own {
-  border-color: #131313;
+border-color: #131313;
 }
 
+/* User fandoms list links: no underline */
 div#user-fandoms a {
-  border-bottom: 0;
-  text-decoration: none;
+border-bottom: 0;
+text-decoration: none;
 }
 
+/* Chapters count badge in stats: small rounded pill with hover color pop */
 dl.stats dd.chapters a {
-  background-color: #000000;
-  padding: 0.3em 0.5em;
-  border-radius: 15%;
-  transition: 0.3s;
+background-color: #000000;
+padding: 0.3em 0.5em;
+border-radius: 15%;
+transition: 0.3s;
 }
-
 dl.stats dd.chapters a:hover {
-  color: #ffffff !important;
+color: #ffffff !important;
 }
 
+/* Required tags bar (warning banners) hidden for minimalist interface */
 .required-tags {
-  display: none !important;
+display: none !important;
 }
